@@ -1,5 +1,5 @@
 .advantages {
-  background: hsl(0, 38%, 51%);
+  text-align: center;
 }
 
 .advantages__tittle {
@@ -7,3 +7,38 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+.advantages__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.advantages__list {
+  list-style: none;
+  text-transform: uppercase;
+  .nested__list {
+    text-align: start;
+  }
+  .advantages__item {
+    &--blue {
+      background-color: #81b3d2;
+      color: #ffffff;
+      .cards-advantages__title {
+        font-size: 18px;
+        font-weight: 700px;
+        line-height: 26px;
+      }
+      .cards-advantages__text {
+        font-size: 14px;
+        font-weight: 400px;
+        line-height: 21px;
+      }
+
+    }
+}
+}
+
