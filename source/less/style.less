@@ -1,8 +1,16 @@
-// Начните писать стили здесь
+//Здесь подключаем правила
+// Базовые настройки
 
-@primary: #f91b6c;
+// Миксины и переменные
+@import "./mixins.less";
+@import "./variables.less";
 
-body {
-  background-color: @primary;
-}
+//Базовые свойства
+@import "./base/base.less";
+@import "./base/fonts.less";
+
+// Блоки компонентов
+@import "./blocks/main-footer";
+@import "./blocks/social.less";
+@import "./blocks/search.less";
 
