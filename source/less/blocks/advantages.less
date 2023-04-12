@@ -23,20 +23,25 @@
 
   .nested__list {
     text-align: start;
+    padding-top: 23px;
 
     .nested__item {
-      .nested__title {
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 26px;
-        text-transform: uppercase;
-
-        .nested__text {
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 21px;
+      padding: 0 18px 0 47px;
+      &:not(:last-child) {
+        margin-bottom: 25px;
+        .nested__title {
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 26px;
           text-transform: uppercase;
-          color: #333333;
+
+          .nested__text {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            text-transform: uppercase;
+            color: #333333;
+          }
         }
       }
     }

@@ -1,27 +1,20 @@
 .banner-sedona {
-  // position: relative;
-  // content: "";
-  .banner-sedona__background-img {
-    position: relative;
+  margin-bottom: 32px;
+  &::after {
     content: "";
-    background-size: 100% auto;
-    background-color: #ffffff;
-    background-repeat: no-repeat;
-    color: #333333;
-    flex-grow: 1;
-    .banner-sedona__lettering {
-      position: absolute;
-      display: block;
-      margin: 0 auto;
-      z-index: 1;
-    }
+    position: absolute;
+    width: 320px;
+    height: 57px;
+    right: 50%;
+    bottom: 0;
+    transform: translate(50%, -7%);
+    background-image: url("/source/img/vector.svg");
   }
 }
 
-.banner-sedona__backgound-img::after {
+.welcome-banner__text {
   position: absolute;
-  content: "";
-  width: 100%;
-  background: url(/source/img/vector.svg);
-  bottom: 0;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
 }
