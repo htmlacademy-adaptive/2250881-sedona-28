@@ -21,60 +21,68 @@
 .advantages__list {
   list-style: none;
   text-transform: uppercase;
+}
 
-  .nested__list {
-    text-align: start;
-    padding-top: 23px;
-
-    .nested__item {
-      padding: 0 18px 0 47px;
-      &:not(:last-child) {
-        margin-bottom: 25px;
-      }
-      .nested__title {
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 26px;
-        text-transform: uppercase;
-
-        .nested__text {
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 21px;
-          text-transform: uppercase;
-          color: #333333;
-        }
-      }
-    }
+.advantages__item {
+  &--blue {
+    background-color: #81b3d2;
+    color: #ffffff;
   }
-  .advantages__item {
-    &--blue {
-      background-color: #81b3d2;
-      color: #ffffff;
-      .advantages__image {
-        vertical-align: bottom;
-      }
-    }
-    .advantages__block {
-      margin: 37px 18px;
-    }
+
+  .advantages__item:nth-child(n + 4) {
+    background-color: #d6d6d6;
   }
+
+  .advantages__image {
+    vertical-align: bottom;
+  }
+
+  .advantages__block {
+    margin: 37px 18px;
+  }
+
   .cards-advantages__title {
     font-size: 18px;
     font-weight: 700px;
     line-height: 26px;
   }
+
   .cards-advantages__number {
     font-size: 14px;
     font-weight: 400px;
     line-height: 21px;
   }
+
   .cards-advantages__text {
     font-size: 14px;
     font-weight: 400px;
     line-height: 21px;
   }
 }
-.advantages__item:nth-child(n + 4) {
-  background-color: #d6d6d6;
+
+.nested__list {
+  text-align: start;
+  padding-top: 23px;
+}
+
+.nested__item {
+  padding: 0 18px 0 47px;
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .nested__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+
+    .nested__text {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: #333333;
+    }
+  }
 }

@@ -68,30 +68,26 @@
           </div>
           <div class="form-feedback__information">
             <fieldset class="field-group form-group__name">
-              <legend class="form-group__tittle">Представьтесь:</legend>
+              <legend class="form-group__tittle form__tittle">
+                Представьтесь:
+              </legend>
               <ul class="form-feedback__list">
                 <li class="form-feedback__item form-feedback__item--flex">
-                  <label
-                    >ИМЯ*:<input
-                      class="form__input-name"
-                      type="text"
-                      name="name"
-                      placeholder="Пётр"
+                  <label class="form__input-name form__text"
+                    >Имя*:<input type="text" name="name" placeholder="Пётр"
                   /></label>
                 </li>
                 <li class="form-feedback__item form-feedback__item--flex">
-                  <label
-                    >ФАМИЛИЯ*:<input
-                      class="form__input-surname"
+                  <label class="form__input-surname form__text"
+                    >Фамилия*:<input
                       type="text"
                       name="surname"
                       placeholder="Пустота"
                   /></label>
                 </li>
                 <li class="form-feedback__item form-feedback__item--flex">
-                  <label
+                  <label class="form__input-patronymic form__text"
                     >Отчество:<input
-                      class="form__input-patronymic"
                       type="text"
                       name="patronymic"
                       placeholder="Викторович"
@@ -100,20 +96,21 @@
               </ul>
             </fieldset>
             <fieldset class="field-group form-group__information">
-              <legend class="form-group__tittle">Контактная информация:</legend>
+              <legend class="form-group__tittle form__tittle">
+                Контактная информация:
+              </legend>
               <ul class="form-feedback__list">
                 <li class="form-feedback__item form-feedback__item--flex">
-                  <label
+                  <label class="form__input-phone form__text"
                     >Контактный телефон*:<input
-                      class="form__input-phone"
                       type="text"
+                      name="phone"
                       placeholder="Введите телефон"
                   /></label>
                 </li>
                 <li class="form-feedback__item form-feedback__item--flex">
-                  <label
+                  <label class="form__input-email form__text"
                     >Электронная почта*:<input
-                      class="form__input-email"
                       type="email"
                       name="email"
                       placeholder="Введите e-mail"
@@ -122,14 +119,13 @@
               </ul>
             </fieldset>
             <fieldset class="field-group form__group-feeling">
-              <legend class="form__group-tittle">
+              <legend class="form__group-tittle form__tittle">
                 Ваше Общее впечатление:
               </legend>
               <ul class="form-feedback__list">
                 <li class="form-feedback__item">
-                  <label>
+                  <label class="form__radio form__point">
                     <input
-                      class="form__radio"
                       type="radio"
                       name="radio"
                       value="positive"
@@ -138,9 +134,8 @@
                   </label>
                 </li>
                 <li class="form-feedback__item">
-                  <label>
+                  <label class="form__radio form__point">
                     <input
-                      class="form__radio"
                       type="radio"
                       name="radio"
                       value="negative"
@@ -149,9 +144,8 @@
                   </label>
                 </li>
                 <li class="form-feedback__item">
-                  <label>
+                  <label class="form__radio form__point">
                     <input
-                      class="form__radio"
                       type="radio"
                       name="radio"
                       value="no-answer"
@@ -162,14 +156,13 @@
               </ul>
             </fieldset>
             <fieldset class="field-group form__group-attraction">
-              <legend class="form__group-tittle">
+              <legend class="form__group-tittle form__tittle">
                 Посещенные достопримечательности:
               </legend>
               <ul class="form-feedback__list">
                 <li class="form-feedback__item">
-                  <label>
+                  <label class="form__checkbox form__point">
                     <input
-                      class="form__checkbox"
                       type="checkbox"
                       name="checkbox"
                       value="bridge-devil"
@@ -178,9 +171,8 @@
                   </label>
                 </li>
                 <li class="form-feedback__item">
-                  <label>
+                  <label class="form__checkbox form__point">
                     <input
-                      class="form__checkbox"
                       type="checkbox"
                       name="checkbox"
                       value="mount-bell"
@@ -189,9 +181,8 @@
                   </label>
                 </li>
                 <li class="form-feedback__item">
-                  <label>
+                  <label class="form__checkbox form__point">
                     <input
-                      class="form__checkbox"
                       type="checkbox"
                       name="checkbox"
                       value="slide-park"
@@ -200,9 +191,8 @@
                   </label>
                 </li>
                 <li class="form-feedback__item">
-                  <label>
+                  <label class="form__checkbox form__point">
                     <input
-                      class="form__checkbox"
                       type="checkbox"
                       name="checkbox"
                       value="red-rock"
@@ -212,7 +202,7 @@
               </ul>
             </fieldset>
             <div class="form-feedback__emotions">
-              <label class="form-feedback__title">
+              <label class="form-feedback__title form__tittle">
                 Опишите свои эмоции:
                 <textarea
                   class="form__textarea"
@@ -391,8 +381,8 @@
       </footer>
       <div class="modal-container modal-container--hidden">
         <div class="modal-wrong__content">
-          <p class="modal__title">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
-          <p class="modal__text">
+          <p class="modal__title form__tittle">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
+          <p class="modal__text form__text">
             Проверьте поля, выделенные красным, скорее всего вы забыли их
             заполнить
           </p>
@@ -403,8 +393,8 @@
       </div>
       <div class="modal-container modal-container--hidden">
         <div class="modal-success__content">
-          <p class="modal__title">Ваш отзыв отправлен!</p>
-          <p class="modal__text">
+          <p class="modal__title form__tittle">Ваш отзыв отправлен!</p>
+          <p class="modal__text form__text">
             Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее
             время мы опубликуем его на сайте.
           </p>
