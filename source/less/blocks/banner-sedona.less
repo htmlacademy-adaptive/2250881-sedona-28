@@ -1,5 +1,7 @@
 .banner-sedona {
+  margin-top: 56px;
   margin-bottom: 32px;
+  // position: relative;
 
   &::after {
     content: "";
@@ -11,6 +13,10 @@
     transform: translate(50%, -7%);
     background-image: url("/source/img/vector.svg");
   }
+
+  @media (min-width: @desktop-width) {
+    height: 518px;
+  }
 }
 
 .welcome-banner__text {
@@ -21,9 +27,5 @@
 }
 
 @media (min-width: @tablet-width) {
-  height: 518px;
-}
-
-@media (min-width: @desktop-width) {
   height: 518px;
 }

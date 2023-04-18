@@ -19,8 +19,21 @@
 .main-nav {
   width: 100%;
   display: flex;
+  position: absolute;
+
+  &--hidden {
+    display: none;
+  }
   // position: relative;
   // margin: 0 auto;
+}
+
+.main-nav__container {
+  margin-top: 56px;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -49,14 +62,12 @@
   background-color: #81b3d2;
   padding: 0;
   margin: 0;
-
-  &--hidden {
-    display: none;
-  }
 }
 
 @media (min-width: @tablet-width) {
   .main-nav__list {
+    display: flex;
+    justify-content: space-between;
     width: 768px;
   }
 }
