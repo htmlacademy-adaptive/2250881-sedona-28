@@ -1,29 +1,54 @@
 .banner-sedona {
+  display: block;
+  position: relative;
+  margin: auto;
   margin-top: 56px;
   margin-bottom: 32px;
+  background-image: url("/img/back-mobile.jpg.jpg");
+  background-repeat: no-repeat;
+  flex-grow: 1;
+  width: 320px;
+  height: 389px;
   // position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 320px;
-    height: 57px;
-    right: 50%;
-    bottom: 0;
-    transform: translate(50%, -7%);
-    background-image: url("/source/img/vector.svg");
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 320px;
+  //   height: 57px;
+  //   right: 50%;
+  //   bottom: 0;
+  //   transform: translate(50%, -7%);
+  //   background-image: url("/source/img/vector.svg");
+  // }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/background-banner_tablet.jpg");
+    height: 518px;
+    width: 768px;
   }
 
   @media (min-width: @desktop-width) {
+    background-image: url("/img/backround-banner.jpg");
     height: 518px;
+    width: 1200px;
   }
 }
 
+// .welcome-banner__background {
+//   position: absolute;
+//   background-size: 100% auto;
+//   object-position: center;
+//   margin: 0 auto;
+// }
+
 .welcome-banner__text {
   position: absolute;
+  display: block;
   right: 50%;
   top: 50%;
   transform: translate(50%, -50%);
+  z-index: 5;
 }
 
 @media (min-width: @tablet-width) {
