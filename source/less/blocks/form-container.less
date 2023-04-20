@@ -1,0 +1,25 @@
+.form-feedback__information {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.form-feedback__list {
+  display: grid;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.form-data__wrapper {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

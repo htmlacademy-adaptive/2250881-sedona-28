@@ -1,0 +1,32 @@
+.main-header {
+  width: 320px;
+  position: relative;
+  z-index: 20;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
+}
+
+.main-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 185px;
+  height: 96px;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+  // &:hover {
+  //   background-color: rgb(147, 27, 27);
+  // }
+}
