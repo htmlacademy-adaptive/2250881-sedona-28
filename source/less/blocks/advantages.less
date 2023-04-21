@@ -30,8 +30,6 @@
   &--blue {
     background-color: #81b3d2;
     color: #ffffff;
-    // display: flex;
-    // flex-direction: column;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -77,16 +75,6 @@
   }
 }
 
-.nested__title {
-  .nested__text {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #333333;
-  }
-}
-
 .grey-list {
   background-color: #d6d6d6;
   padding: 26px 24px;
@@ -109,40 +97,41 @@
   vertical-align: bottom;
 }
 
-.base-title {
-  .base-tittle();
+//Шрифты
+
+.cards-advantages__title {
+  .base-title__mobil();
+
+  @media (min-width: 768px) {
+    .base-title__tablet();
+  }
 }
 
-.advantages__text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #333333;
+.cards-advantages__text {
+  .base-text;
+
+  &--blue {
+    color: #ffffff;
+  }
 }
 
-//   .advantages__block {
-//     margin: 37px 18px;
-//   }
+.cards-advantages__number {
+  .base-text;
 
-//   .cards-advantages__title {
-//     font-size: 18px;
-//     font-weight: 700px;
-//     line-height: 26px;
-//   }
+  &--blue {
+    color: #ffffff;
+  }
+}
 
-//   .cards-advantages__number {
-//     font-size: 14px;
-//     font-weight: 400px;
-//     line-height: 21px;
-//   }
+.nested-title {
+  .base-title__mobil();
 
-//   .cards-advantages__text {
-//     font-size: 14px;
-//     font-weight: 400px;
-//     line-height: 21px;
-//   }
-// }
+  @media (min-width: 768px) {
+    .base-title__tablet();
+  }
+}
 
-//
+.nested-text {
+  .base-text();
+}
+

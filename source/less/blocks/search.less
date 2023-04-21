@@ -5,16 +5,15 @@
   text-transform: uppercase;
 
   .search__title {
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 26px;
+    .base-title__tablet();
+
+    @media (min-width: 768px) {
+      font-size: 30px;;
+    }
   }
 
   .search__text {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    color: #333333;
+    .base-text();
   }
 }
 
