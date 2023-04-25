@@ -18,5 +18,11 @@
 }
 
 .button--search {
-  padding: 16px 49px;
+  .button-base() {
+    @media (min-width: 768px) {
+      width: 458px;
+      height: 58px;
+      padding: 14.5px 121px;
+    }
+  }
 }
