@@ -16,16 +16,13 @@
           alt="Логотип города Седона."
         />
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__container">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list main-nav__list--hiden">
+            <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link" href="catalog.html">ФОТО И ВИДЕО</a>
             </li>
             <li class="main-nav__item">
@@ -36,6 +33,9 @@
             </li>
           </ul>
         </div>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </nav>
     </header>
     <main class="main-catalog__container">

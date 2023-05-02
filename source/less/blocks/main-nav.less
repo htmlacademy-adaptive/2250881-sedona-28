@@ -17,13 +17,13 @@
   display: block;
   width: 70px;
   height: 51px;
-  background-color: #6a4d38;
+  background-color: #ffffff;
   cursor: pointer;
   border: none;
 
   &:hover,
   &:active {
-    background-color: #624530;
+    background-color: #ffffff;
   }
 
   @media (min-width: @tablet-width) {
@@ -106,6 +106,7 @@
   top: 0;
   right: 0;
   z-index: 10;
+  background-color: #81b3d2;
 
   &::before,
   &::after {
@@ -147,45 +148,45 @@
   }
 }
 
-.main-nav__wrapper {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 640px;
-    margin: 0 auto;
-  }
+// .main-nav__wrapper {
+//   @media (min-width: @tablet-width) {
+//     display: flex;
+//     justify-content: space-between;
+//     width: 100%;
+//     margin: 0 auto;
+//   }
 
-  @media (min-width: @desktop-width) {
-    width: 960px;
-  }
-}
+//   @media (min-width: @desktop-width) {
+//     width: 100%;
+//   }
+// }
 //FROM HERE
 .main-nav__item {
-  @media (min-width: @tablet-width) {
-    margin-right: 33px;
+  // @media (min-width: @tablet-width) {
+  //   margin-right: 33px;
 
-    &:nth-child(3) {
-      grid-column: 4;
-    }
+  //   &:last-child {
+  //     margin-right: 0;
+  //   }
+  // }
+
+  &:nth-child(3) {
+    grid-column: 4;
   }
 
-  &:last-child {
-    margin-right: 0;
+  &--current:hover {
+    color: #766357;
   }
 }
 
-.site-list__item a[href] {
+.main-nav__item a[href] {
   @media (min-width: @tablet-width) {
     &:hover {
-      color: #826550;
-
-      background-color: #000000;
+      color: #81b3d2;
     }
 
     &:active {
-      color: #ffffff;
-
-      background-color: #000000;
+      color: #766357;
       opacity: 0.3;
     }
   }
