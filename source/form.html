@@ -68,12 +68,12 @@
                 </legend>
                 <ul class="form-feedback__list form-feedback__list--data">
                   <li class="form-feedback__item">
-                    <label class="form__input-name form__text"
+                    <label class="form__input form__text"
                       >Имя* :<input class="input-data" type="text" name="name" placeholder="Пётр"
                     /></label>
                   </li>
                   <li class="form-feedback__item">
-                    <label class="form__input-surname form__text"
+                    <label class="form__input form__text"
                       >Фамилия*:<input class="input-data"
                         type="text"
                         name="surname"
@@ -81,7 +81,7 @@
                     /></label>
                   </li>
                   <li class="form-feedback__item">
-                    <label class="form__input-patronymic form__text"
+                    <label class="form__input form__text"
                       >Отчество:<input class="input-data"
                         type="text"
                         name="patronymic"
@@ -96,22 +96,26 @@
                 </legend>
                 <ul class="form-feedback__list form-feedback__list--data">
                   <li class="form-feedback__item">
-                    <label class="form__input-phone form__text"
+                    <label class="form__input form__text"
                       >Контактный телефон*:<input
                       class="input-contacts"
-                        type="text"
+                        type="tel"
                         name="phone"
                         placeholder="Введите телефон"
-                    /></label>
+                    />
+                    <span class="form-list__icon"></span>
+                  </label>
                   </li>
                   <li class="form-feedback__item">
-                    <label class="form__input-email form__text"
+                    <label class="form__input form__text"
                       >Электронная почта*:<input
                       class="input-contacts"
                         type="email"
                         name="email"
                         placeholder="Введите e-mail"
-                    /></label>
+                    />
+                    <span class="form-list__icon"></span>
+                  </label>
                   </li>
                 </ul>
               </fieldset>
@@ -211,13 +215,19 @@
                 ></textarea>
               </label>
             </div>
-            <button
-              class="form-feedback__button button button--form"
-              type="submit"
-            >
-              ОТПРАВИТЬ ОТЗЫВ
-            </button>
-            <span class="form-feedback__tooltip">* — обязательные поля</span>
+            <div class="button-submit">
+              <button
+                class="form-feedback__button button button--form"
+                type="submit"
+              >
+                ОТПРАВИТЬ ОТЗЫВ
+              </button>
+              <p class="stats__legend stats__legend--top">
+                <small>
+                  * — обязательные поля
+                </small>
+              </p>
+          </div>
           </div>
         </form>
       </section>
