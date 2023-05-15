@@ -48,7 +48,7 @@
         <h2 class="visually-hidden">Баннер города Седона</h2>
         <img
           class="welcome-banner__text"
-          src="img/lettering.svg.svg"
+          src="img/lettering.svg"
           width="282"
           height="214"
           alt="Welcome to the gorgeus Sedona, because the Grand Canyon sucks!."
@@ -74,13 +74,18 @@
                   СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
                 </p>
               </div>
+              <picture>
+                <sourse media="(min-width: 1200px)" srcset="./img/city-desktop.png 1x, ./img/city-desktop@2x.jpg 2x">
+                <sourse media="(min-width: 768px)" srcset="./img/city-tablet.jpg 1x, ./img/city-tablet@2x.jpg 2x">
               <img
                 class="advantages__image"
-                src="./img/city.jpg"
-                width="520"
+                src="./img/city-phone.jpg"
+                width="320"
                 height="260"
+                srcset="./img/city-phone@2x.jpg 2x"
                 alt="Фотография домов Седоны"
               />
+            </picture>
             </li>
             <li class="advantages__item">
               <ul class="advantages__list nested__list">
@@ -136,13 +141,18 @@
                   Да, по нему можно пройти! Если вы осмелитесь, конечно
                 </p>
               </div>
+              <picture>
+                <sourse media="(min-width: 1200px)" srcset="./img/canyon-desktop.jpg 1x, ./img/canyon-desktop@2x.jpg 2x">
+                <sourse media="(min-width: 768px)" srcset="./img/canyon-tablet@2x.jpg, ./img/canyon-tablet@2x.jpg 2x">
               <img
                 class="advantages__image"
-                src="./img/canyon1.jpg"
-                width="520"
+                src="./img/canyon1-phone.jpg"
+                width="320"
                 height="260"
+                srcset="./img/canyon1-phone@2x.jpg 2x"
                 alt="Фотография каньона"
               />
+            </picture>
             </li>
             <div class="grey-list">
               <li class="advantages__item">
