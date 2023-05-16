@@ -48,7 +48,7 @@
         <h2 class="visually-hidden">Баннер города Седона</h2>
         <img
           class="welcome-banner__text"
-          src="img/lettering.svg.svg"
+          src="img/lettering.svg"
           width="282"
           height="214"
           alt="Welcome to the gorgeus Sedona, because the Grand Canyon sucks!"
@@ -68,13 +68,18 @@
         <div class="catalog-cards__gallary">
           <ul class="catalog-cards__list">
             <li class="catalog-cards__item catalog-cards__1">
-              <img
+              <picture>
+                <sourse media="(min-width: 1200px)" width="1200" height="400" srcset="./img/photo-card-1-desktop.jpg 1x, ./img/photo-card-1-desktop@2x.jpg 2x">
+                <sourse media="(min-width: 768px)" widht="648" height="400" srcset="./img/photo-card-1-tablet.jpg 1x, ./img/photo-card-1-tablet@2x.jpg 2x">
+                <img
                 class="catalog-photo"
-                src="./img/photo-card-1.jpg"
+                src="./img/photo-card-1-mobile.jpg"
                 width="280"
                 height="280"
+                srcset="./img/photo-card-1-mobile@2x.jpg"
                 alt="Фотография дороги на фоне заката."
-              />
+                />
+            </picture>
               <p class="catalog-photo__title">неродные просторы</p>
               <p class="catalog-photo__text">Автор фото: Борис</p>
               <div class="catalog-counter">
