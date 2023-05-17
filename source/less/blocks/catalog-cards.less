@@ -1,29 +1,10 @@
 .catalog-cards__list {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: minmax(100px, auto);
-  grid-template-areas:
-    "a"
-    "b"
-    "c"
-    "d";
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 0 20px;
-
-  .catalog-cards__1 {
-    grid-area: a;
-  }
-
-  .catalog-cards__2 {
-    grid-area: b;
-  }
-
-  .catalog-cards__3 {
-    grid-area: c;
-  }
-
-  .catalog-cards__4 {
-    grid-area: d;
-  }
 
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(2, 1fr);
