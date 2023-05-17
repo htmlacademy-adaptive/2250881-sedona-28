@@ -7,6 +7,7 @@
     "b"
     "c"
     "d";
+  padding: 0 20px;
 
   .catalog-cards__1 {
     grid-area: a;
@@ -41,6 +42,11 @@
       "b c d";
   }
 }
+
+// .catalog-cards__gallery img {
+//   display: block;
+//   margin: 0 auto;
+// }
 
 .catalog-heading__tittle {
   .base-title__mobil();
@@ -77,9 +83,11 @@
 }
 
 .catalog-cards__1 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .catalog-photo__title {
@@ -123,4 +131,9 @@
   @media (min-width: 1200px) {
     color: #ffffff;
   }
+}
+
+.catalog__video img {
+  display: block;
+  margin: 0 auto;
 }
