@@ -1,23 +1,37 @@
 //Блок поиск
 
+.search {
+  display: flex;
+  flex-direction: column;
+}
+
 .search__wrapper {
   text-align: center;
   text-transform: uppercase;
+  padding: 36px 29px;
 
   .search__title {
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 26px;
+    .base-title__tablet();
+
+    @media (min-width: 768px) {
+      font-size: 30px;
+    }
   }
 
   .search__text {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    color: #333333;
+    .base-text();
   }
 }
 
-.button--search {
-  padding: 16px 49px;
+.button-search {
+  .button-base();
+  margin: 0 auto;
+  font-size: 18px;
+  margin-bottom: 65px;
+
+  @media (min-width: 768px) {
+    width: 458px;
+    height: 58px;
+    padding: 14.5px 121px;
+  }
 }
